@@ -12,6 +12,10 @@ class Visible {
     }
 
     showMenu(menu) {
+
+    }
+    
+    hideMenu(menu) {
         
     }
 }
