@@ -2,7 +2,7 @@ import "./style.css";
 
 const button1 = document.getElementById("menuToggleButton1");
 const menu1 = document.getElementById("dropdownMenu1");
-const dropdownMenuOption1 = document.querySelectorAll(".dropdownMenuOption1")
+const dropdownMenuOptions1 = document.querySelectorAll(".dropdownMenuOptions1")
 
 class Visible {
     constructor(menuToggleButton, dropdownMenu) {
