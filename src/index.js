@@ -1,2 +1,7 @@
 import "./style.css";
-const menuToggleButton = document.getElementById("menuToggleButton");
+
+class Visible {
+    constructor() {
+        this.menuToggleButton = document.getElementById("menuToggleButton")
+    }
+}
