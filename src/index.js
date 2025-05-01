@@ -18,7 +18,7 @@ class Visible {
     }
 
     hideMenu() {
-        
+        this.dropdownMenu.style.visibility = "hidden";
     }
 };
 
