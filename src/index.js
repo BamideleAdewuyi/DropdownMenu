@@ -8,15 +8,15 @@ class Visible {
 
     addListener() {
         this.menuToggleButton.addEventListener("click", () => {
-
+            this.showMenu();
         })
     }
 
     showMenu() {
-
+        this.dropdownMenu.style.visibility = "visible";
     }
 
     hideMenu() {
         
     }
-}
+};
