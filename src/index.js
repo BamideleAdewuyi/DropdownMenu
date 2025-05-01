@@ -7,10 +7,10 @@ class Visible {
     constructor(menuToggleButton, dropdownMenu) {
         this.menuToggleButton = menuToggleButton;
         this.dropdownMenu = dropdownMenu;
-        this.addListener();
+        this.addListeners();
     }
 
-    addListener() {
+    addListeners() {
         this.menuToggleButton.addEventListener("click", () => {
             this.showMenu();
         })
