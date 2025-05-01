@@ -5,17 +5,22 @@ const menu1 = document.getElementById("dropdownMenu1");
 const dropdownMenuOptions1 = document.querySelectorAll(".dropdownMenuOptions1")
 
 class Visible {
-    constructor(menuToggleButton, dropdownMenu, dropDownMenuOptions) {
+    constructor(menuToggleButton, dropdownMenu, dropdownMenuOptions) {
         this.menuToggleButton = menuToggleButton;
         this.dropdownMenu = dropdownMenu;
-        this.dropdownMenuOptions1 = dropDownMenuOptions;
+        this.dropdownMenuOptions = dropdownMenuOptions;
         this.addListeners();
     }
 
     addListeners() {
-        this.menuToggleButton.addEventListener("click", () => {
-            this.showMenu();
-        })
+        this.menuToggleButton.addEventListener("click", () => this.showMenu())
+
+        this.dropdownMenuOptions.forEach(option => {
+            option.addEventListener("click", () => {
+                this.hideMenu();
+                this.menuToggleButton.textContent = option.textContent
+            })
+        });
     }
 
     showMenu() {
