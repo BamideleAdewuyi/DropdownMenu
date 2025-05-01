@@ -1,7 +1,7 @@
 import "./style.css";
 
 class Visible {
-    constructor() {
+    constructor(menuToggleButton, dropdownMenu) {
         this.menuToggleButton = document.getElementById("menuToggleButton")
         this.dropdownMenu = document.querySelector(".dropdownMenu");
         this.addListener();
