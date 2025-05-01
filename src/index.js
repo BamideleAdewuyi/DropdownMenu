@@ -5,9 +5,10 @@ const menu1 = document.getElementById("dropdownMenu1");
 const dropdownMenuOptions1 = document.querySelectorAll(".dropdownMenuOptions1")
 
 class Visible {
-    constructor(menuToggleButton, dropdownMenu) {
+    constructor(menuToggleButton, dropdownMenu, dropDownMenuOptions) {
         this.menuToggleButton = menuToggleButton;
         this.dropdownMenu = dropdownMenu;
+        this.dropdownMenuOptions1 = dropDownMenuOptions;
         this.addListeners();
     }
 
@@ -26,4 +27,4 @@ class Visible {
     }
 };
 
-const visible = new Visible(button1, menu1);
+const visible = new Visible(button1, menu1, dropdownMenuOptions1);
