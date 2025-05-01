@@ -7,7 +7,11 @@ class Visible {
 
     addListener() {
         this.menuToggleButton.addEventListener("click", () => {
-            
+
         })
+    }
+
+    showMenu(menu) {
+        
     }
 }
