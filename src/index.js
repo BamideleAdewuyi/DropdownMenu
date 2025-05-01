@@ -20,3 +20,5 @@ class Visible {
         
     }
 };
+
+const visible = new Visible();
