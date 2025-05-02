@@ -39,7 +39,8 @@ class Visible {
     }
 
     getHeight() {
-
+        const menuHeight = this.dropdownMenu.offsetHeight;
+        return menuHeight;
     }
 };
 
