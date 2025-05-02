@@ -37,6 +37,10 @@ class Visible {
         this.dropdownMenu.style.visibility = "hidden";
         this.dropdownMenu.style.height = "0";
     }
+
+    getHeight() {
+
+    }
 };
 
 const visible = new Visible(button1, menu1, dropdownMenuOptions1);
