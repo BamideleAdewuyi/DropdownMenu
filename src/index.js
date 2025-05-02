@@ -14,6 +14,7 @@ class Visible {
         this.dropdownMenu = dropdownMenu;
         this.dropdownMenuOptions = dropdownMenuOptions;
         this.addListeners();
+        this.hideMenu();
     }
 
     addListeners() {
