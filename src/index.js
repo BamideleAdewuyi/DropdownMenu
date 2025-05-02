@@ -29,10 +29,12 @@ class Visible {
 
     showMenu() {
         this.dropdownMenu.style.visibility = "visible";
+        this.dropdownMenu.style.height = "3.5em";
     }
 
     hideMenu() {
         this.dropdownMenu.style.visibility = "hidden";
+        this.dropdownMenu.style.height = "0";
     }
 };
 
