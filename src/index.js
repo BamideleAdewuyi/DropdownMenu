@@ -13,6 +13,7 @@ class Visible {
         this.menuToggleButton = menuToggleButton;
         this.dropdownMenu = dropdownMenu;
         this.dropdownMenuOptions = dropdownMenuOptions;
+        this.menuHeight = this.getHeight();
         this.addListeners();
         this.hideMenu();
     }
@@ -30,7 +31,7 @@ class Visible {
 
     showMenu() {
         this.dropdownMenu.style.visibility = "visible";
-        this.dropdownMenu.style.height = "3.5em";
+        this.dropdownMenu.style.height = `${this.menuHeight}px`;
     }
 
     hideMenu() {
